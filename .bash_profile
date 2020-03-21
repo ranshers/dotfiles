@@ -55,3 +55,4 @@ if [ -f '/home/ransher/google-cloud-sdk/path.bash.inc' ]; then . '/home/ransher/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/ransher/google-cloud-sdk/completion.bash.inc' ]; then . '/home/ransher/google-cloud-sdk/completion.bash.inc'; fi
+source <(kubectl completion bash)

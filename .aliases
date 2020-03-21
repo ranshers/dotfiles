@@ -19,4 +19,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+#kubectl
+alias k=kubectl
+complete -F __start_kubectl k
 
