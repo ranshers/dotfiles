@@ -1,1 +1,9 @@
 README.md
+.bash_history
+.bash_logout
+.sudo_as_admin_successful
+.viminfo
+.dotfiles/
+.vscode-server/
+.profile
+.wget-hsts
