@@ -11,7 +11,8 @@ fi
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
-alias l="ls -lAF ${colorflag}"
+alias l="ls -lhAF ${colorflag}"
+alias ll="ls -lhF ${colorflag}"
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
@@ -23,4 +24,3 @@ alias egrep='egrep --color=auto'
 source <(kubectl completion bash)
 alias k=kubectl
 complete -F __start_kubectl k
-
