@@ -1,4 +1,5 @@
-# ransher-dotfiles
+#ransher-dotfiles
+
 Personal dot (.*) files for Linux
 
 - clone your github repository
@@ -24,19 +25,19 @@ Personal dot (.*) files for Linux
       > or 
       > chsh -s /usr/bin/zsh
   - **oh-my-zsh**
-    > $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    > OR
-    > $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+    > $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" <br>
+    > OR <br>
+    > $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" <br>
     > 
-    > vi ~/.zshrc **(change ZSH_THEME="powerlelevl10k/powerllevel10k")**
-    > source ~/.zshrc
+    > vi ~/.zshrc **(change ZSH_THEME="powerlelevl10k/powerllevel10k")** <br>
+    > source ~/.zshrc <br>
   - **plugins**
-    >  git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-    > git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+    >  git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions <br> 
+    > git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting <br>
     >
-    > vi ~/.zshrc
-    > **add plugins= (git zsh-autosuggestions zsh-syntax-highlighting)**
-    > source ~/.zshrc
+    > vi ~/.zshrc <br>
+    > **add plugins= (git zsh-autosuggestions zsh-syntax-highlighting)** <br>
+    > source ~/.zshrc <br>
 
 
 - Install Kubectx/kubelens
@@ -53,15 +54,12 @@ Personal dot (.*) files for Linux
 
 > ## Example
 >
-> dotfiles status
-> dotfiles add .vimrc
-> dotfiles commit -m "Add vimrc"
-> dotfiles add .bashrc
-> dotfiles commit -m "Add bashrc"
+> dotfiles status <br>
+> dotfiles add .vimrc <br>
+> dotfiles commit -m "Add vimrc" <br>
+> dotfiles add .bashrc <br>
+> dotfiles commit -m "Add bashrc" <br>
 > dotfiles push
 
 #### References
 > https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b
-
-
-
