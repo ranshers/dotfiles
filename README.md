@@ -1,4 +1,4 @@
-#ransher-dotfiles
+# ransher-dotfiles
 
 Personal dot (.*) files for Linux
 
