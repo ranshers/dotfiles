@@ -1,6 +1,6 @@
 # ransher-dotfiles
 
-Personal dot (.*) files for Linux
+> ## Personal dot (.*) files for Linux
 
 - clone your github repository
 
@@ -35,7 +35,10 @@ Personal dot (.*) files for Linux
     $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
     ``` 
     ```bash
-    vi ~/.zshrc **(change ZSH_THEME="powerlelevl10k/powerllevel10k")**
+    vi ~/.zshrc 
+    
+    **(change ZSH_THEME="powerlelevl10k/powerllevel10k")**
+
     source ~/.zshrc
     ```
   - **plugins**
@@ -44,7 +47,9 @@ Personal dot (.*) files for Linux
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
     
     vi ~/.zshrc
+
     ** add plugins= (git zsh-autosuggestions zsh-syntax-highlighting) **
+
     source ~/.zshrc
     ```
 
@@ -58,7 +63,7 @@ Personal dot (.*) files for Linux
       git clone https://github.com/jonmosco/kube-ps1.git
 
 + Install gcloud SDK
-
+  - [Install gcloud SDK for Linux](https://cloud.google.com/sdk/docs/install#linux)
 
 
 > ## Example
@@ -73,4 +78,4 @@ dotfiles push
 ```
 
 > ## References
-> https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b
+- [How to manage your dotfiles with git](https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b)
