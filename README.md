@@ -18,26 +18,35 @@ Personal dot (.*) files for Linux
 - Setup zsh/oh-my-zsh/powerlevel10k/plugins
 
   - **zsh**
-      > sudo apt install zsh
-      > zsh --version
-      > echo $SHELL
-      > chsh -s $(which zsh) 
-      > or 
-      > chsh -s /usr/bin/zsh
+      ```bash
+      sudo apt install zsh
+      zsh --version
+      echo $SHELL
+      chsh -s $(which zsh) 
+      or 
+      chsh -s /usr/bin/zsh
+      ```
   - **oh-my-zsh**
-    > $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" <br>
-    > OR <br>
-    > $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" <br>
-    > 
-    > vi ~/.zshrc **(change ZSH_THEME="powerlelevl10k/powerllevel10k")** <br>
-    > source ~/.zshrc <br>
+    ```bash
+    $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+    OR
+    ```bash
+    $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+    ``` 
+    ```bash
+    vi ~/.zshrc **(change ZSH_THEME="powerlelevl10k/powerllevel10k")**
+    source ~/.zshrc
+    ```
   - **plugins**
-    >  git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions <br> 
-    > git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting <br>
-    >
-    > vi ~/.zshrc <br>
-    > **add plugins= (git zsh-autosuggestions zsh-syntax-highlighting)** <br>
-    > source ~/.zshrc <br>
+    ```bash
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+    
+    vi ~/.zshrc
+    ** add plugins= (git zsh-autosuggestions zsh-syntax-highlighting) **
+    source ~/.zshrc
+    ```
 
 
 - Install Kubectx/kubelens
@@ -53,13 +62,15 @@ Personal dot (.*) files for Linux
 
 
 > ## Example
->
-> dotfiles status <br>
-> dotfiles add .vimrc <br>
-> dotfiles commit -m "Add vimrc" <br>
-> dotfiles add .bashrc <br>
-> dotfiles commit -m "Add bashrc" <br>
-> dotfiles push
 
-#### References
+```bash
+dotfiles status
+dotfiles add .vimrc
+dotfiles commit -m "Add vimrc"
+dotfiles add .bashrc
+dotfiles commit -m "Add bashrc"
+dotfiles push
+```
+
+> ## References
 > https://medium.com/toutsbrasil/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b
