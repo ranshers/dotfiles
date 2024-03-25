@@ -37,7 +37,7 @@
     ```bash
     vi ~/.zshrc 
     
-    **(change ZSH_THEME="powerlelevl10k/powerllevel10k")**
+    **(change ZSH_THEME="powerlevel10k/powerlevel10k")**
 
     source ~/.zshrc
     ```
