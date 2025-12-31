@@ -1,0 +1,17 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "general": {
+    "previewFeatures": true,
+    "vimMode": true,
+    "checkpointing": {
+      "enabled":true
+    }
+  },
+  "ui": {
+    "showModelInfoInChat": true
+  }
+}

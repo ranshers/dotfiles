@@ -29,3 +29,4 @@ complete -F __start_kubectl k
 alias gith="dotfiles log --pretty=format:\"%h - %an, %ar : %s\""
 alias dfh="dotfiles log --pretty=format:\"%h - %an, %ar : %s\""
 alias dfs="dotfiles status"
+alias gs="git status"

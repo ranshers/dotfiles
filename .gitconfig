@@ -1,5 +1,3 @@
 [user]
-	email = ranshers@gmail.com
-	name = ranshers
-[credential]
-	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
+        email = ranshers@gmail.com
+        name = ranshers
