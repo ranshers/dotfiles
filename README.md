@@ -1,79 +1,56 @@
 # ransher-dotfiles
 
-> ## Personal dot (.*) files for Linux
+> ## Personal dot (.*) files for Linux and macOS
 
-- clone your github repository
+### 1. Bootstrap
 
-      git clone --bare https://github.com/ranshers/dotfiles.git $HOME/.dotfiles
-
-- define the alias in the current shell scope
-
-      alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-- checkout the actual content from the git repository to your $HOME
-
-      dotfiles checkout
-
-
-- Setup zsh/oh-my-zsh/powerlevel10k/plugins
-
-  - **zsh**
-      ```bash
-      sudo apt install zsh
-      zsh --version
-      echo $SHELL
-      chsh -s $(which zsh) 
-      or 
-      chsh -s /usr/bin/zsh
-      ```
-  - **oh-my-zsh**
+1.  **Clone the repository:**
     ```bash
-    $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    ```
-    OR
-    ```bash
-    $ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-    ``` 
-    ```bash
-    vi ~/.zshrc 
-    
-    **(change ZSH_THEME="powerlevel10k/powerlevel10k")**
-
-    source ~/.zshrc
-    ```
-  - **plugins**
-    ```bash
-    git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-    
-    vi ~/.zshrc
-
-    ** add plugins= (git zsh-autosuggestions zsh-syntax-highlighting) **
-
-    source ~/.zshrc
+    git clone --bare https://github.com/ranshers/dotfiles.git $HOME/.dotfiles
     ```
 
+2.  **Define the alias (current shell scope):**
+    ```bash
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    ```
 
-- Install Kubectx/kubelens
+3.  **Checkout content:**
+    ```bash
+    dotfiles checkout
+    ```
+    *Note: If you have existing configuration files that conflict, backup or remove them, then run `dotfiles checkout` again.*
 
-      git clone https://github.com/ahmetb/kubectx.git ~/.kubectx
+### 2. Automated Setup
 
-+ Install kube-ps1
+Run the setup script to install dependencies (Zsh, Plugins, Gemini CLI, etc.) and configure your environment for **macOS** or **Linux**:
 
-      git clone https://github.com/jonmosco/kube-ps1.git
+```bash
+chmod +x setup.sh
+./setup.sh
+```
 
-+ Install gcloud SDK
-  - [Install gcloud SDK for Linux](https://cloud.google.com/sdk/docs/install#linux)
+**What this script does:**
+*   Installs/Configures **Zsh** and **Oh My Zsh**.
+*   Installs plugins: `zsh-autosuggestions`, `zsh-syntax-highlighting`.
+*   Installs **Powerlevel10k** theme support.
+*   Installs **kube-ps1** and Kubernetes tools.
+*   Installs and configures **Gemini CLI** (macOS).
 
+### 3. Gemini CLI
 
-> ## Example
+This repository tracks your **Gemini CLI** settings.
+
+*   **Settings File:** `~/.gemini/settings.json` (linked to `gemini-settings.json` in this repo).
+*   **Setup:** The `setup.sh` script automatically installs the CLI (on macOS) and links the configuration file.
+
+### 4. Usage Example
+
+Manage your dotfiles using the `dotfiles` alias:
 
 ```bash
 dotfiles status
 dotfiles add .vimrc
 dotfiles commit -m "Add vimrc"
-dotfiles add .bashrc
-dotfiles commit -m "Add bashrc"
 dotfiles push
 ```
 
