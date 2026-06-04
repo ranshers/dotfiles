@@ -12,6 +12,7 @@
     }
   },
   "ui": {
-    "showModelInfoInChat": true
+    "showModelInfoInChat": true,
+    "showTokenUsageInChat": true
   }
 }
